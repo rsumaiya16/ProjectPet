@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.custom-button {
+    background-color: #d8b4fe; /* Equivalent to Tailwind's purple-300 */
+    color: black;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .custom-button:hover {
+    background-color: #c084fc; /* Equivalent to Tailwind's purple-400 */
+  }
