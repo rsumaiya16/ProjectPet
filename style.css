@@ -14,3 +14,18 @@
   .custom-button:hover {
     background-color: #c084fc; /* Equivalent to Tailwind's purple-400 */
   }
+  
+.progress-container {
+  width: 100%;             /* Full width of the container */
+  height: 20px;            /* Height of the progress bar */
+  background-color: #f3f3f3; /* Background color */
+  border-radius: 10px;     /* Rounded corners */
+  overflow: hidden;        /* Hides anything beyond the bounds */
+}
+
+.progress-bar {
+  height: 100%;
+  width: 50%;              /* Initial width of the progress (change this dynamically) */
+  background-color: #4caf50; /* Green color */
+  transition: width 0.25s ease-out; /* Smooth transition for width change */
+}
