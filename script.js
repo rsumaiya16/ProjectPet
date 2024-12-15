@@ -51,3 +51,13 @@ function showName() {
 
   writtenTextDiv.innerHTML = catName ? `Hola,this is  ${catName}` : "Give me a name please 🥺";
 }
+document.getElementById("username").addEventListener("keypress", function(event) {
+  if (event.key === "Enter") { // Check if the Enter key was pressed
+    event.preventDefault();
+      let name = event.target.value; // Get the value from the input
+      let welcomeTextDiv = document.querySelector(".welcometext"); // Select the welcometext div
+      
+      // Update the div with the welcome message
+      welcomeTextDiv.innerHTML = name ? `Hello ${name}, welcome to our page!` : "Hello, welcome to our page!";
+  }
+});
