@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Crystal Math</title>
+  <title>cattoo</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="./dist/output.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,7 +72,7 @@
 <body class="bbody" style="background-image: url('back.jpg');">
   <div class="container">
     <div class="left-section">
-      <h1 style="background-color: #9d7cdb; color: #000000; padding: 10px; border-radius:15px ;box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);" >
+      <h1 style="background-color: #9d7cdb; color: #000000; padding: 10px; border-radius:15px ;border-color: #000000;border-width: 3px;box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);" >
         What Type of Cat Are You Choosing?
       </h1>
       
@@ -85,27 +85,32 @@
         <input type="text" id="catPersonality" placeholder="personality" class="input-field">
         
         <div class="button-container">
-            <button onclick="showCat()" class="button choose-cat-button">Choose Cat</button>
+            <button onclick="showCat();showName()" class="button choose-cat-button">Choose Cat</button>
         </div>
     </div>
 
     <div class="middle-section">
+      <div class="writtentext"></div>
         <div class="cat-image"></div>
+        <h1 style="background-color: #9d7cdb; color: #000000; padding: 10px; border-radius:15px ;border-color: #000000;border-width: 3px ;box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">Bonding Level</h1>
         <div class="progress-bar-container">
             <div id="progressBar" class="progress-bar"></div>
         </div>
     </div>
 
     <div class="right-section">
-        <button onclick="increaseProgress()" class="button increase-button">Increase</button>
-        <button onclick="decreaseProgress()" class="button decrease-button">Decrease</button>
+        <button onclick="increaseProgress()" class="button increase-button" id="increaseBtn">Feed</button>
+        <button onclick="decreaseProgress()" class="button decrease-button" id="decreaseBtn">Slap</button>
+        <button onclick="increaseProgress()" class="button increase-button" id="increaseBtn">Shower</button>
+        <button onclick="decreaseProgress()" class="button decrease-button" id="decreaseBtn">Scold</button>
     </div>
 </div>
 
 
-<script src="script.js"></script>
 
+<script src="script.js"></script>
 </body>
+
 </html>
 
 

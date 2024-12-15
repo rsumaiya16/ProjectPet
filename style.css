@@ -67,19 +67,32 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-family: 'Serif';
 }
 
 .choose-cat-button {
     background-color: #6027cc;
     color: white;
     border-radius: 15px;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 10px;
 }
 
 .choose-cat-button:hover {
     background-color: #76108b;
+   
 }
 
 /* middle section */
+.middle-section h1 {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Serif';
+ 
+  
+}
+
 .middle-section {
     width: 50%;
     background:transparent;
@@ -87,15 +100,54 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 7px;
 }
 
-.cat-image {
-    width: 200px;
-    height: 200px;
-    background-color: #ccc;
-    border-radius: 50%;
-    margin-bottom: 20px;
+.writtentext {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #d8b4fe;
+  border: 3px solid #ccc;
+  width: 50%;
+  height: 50px;
+  font-family: 'Serif';
+  color: black;
+  border: 3px solid  #000000;
 }
+
+
+/* cat section */
+.cat-section h1 {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Serif';
+
+
+}
+
+.cat-section {
+    width: 50%;
+    background:transparent;
+  font-size: 24px;
+    font-weight: bold;
+    font-family: 'Serif';
+}
+.cat-image {
+  width: 200px; 
+  height: 200px; 
+  border-radius: 50%; 
+  overflow: hidden;
+  text-align: center;
+  margin: 20px auto;
+  border: 3px solid #000000; 
+}
+
+.cat-image img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+}
+
 
 /* Progress Bar Container */
 .progress-bar-container {
@@ -111,7 +163,7 @@
 
 /* progress bar */
 .progress-bar {
-  width: 7%;  
+  width: 0%;  
   height: 100%;
   background-color: #300f61;
   transition: width 0.5s ease-in-out;
@@ -132,20 +184,31 @@
 }
 
 .increase-button {
-    background-color: #32cd32;
+    background-color: #32cdbe;
     color: white;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 10px;
+    font-family: 'Serif';
+  
 }
 
 .increase-button:hover {
-    background-color: #228b22;
+    background-color: #22638b;
+    cursor: pointer;
 }
 
 .decrease-button {
-    background-color: #ff6347;
+    background-color: #4769ff;
     color: white;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 10px;
+    font-family: 'Serif';
 }
 
 .decrease-button:hover {
-    background-color: #b22222;
+    background-color: #2235b2;
+    cursor:pointer;
 }
 
